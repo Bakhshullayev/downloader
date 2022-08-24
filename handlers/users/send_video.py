@@ -12,7 +12,7 @@ async def send_video(msg: types.Message):
     yt = YouTube(link)
 
     # Showing details
-    await msg.answer("Title: ", yt.title)
+    await msg.answer("Title: ", str(yt.title))
     await msg.answer("Number of views: ", str(yt.views))
     await msg.answer("Length of video: ", str(yt.length))
     await msg.answer("Rating of video: ", str(yt.rating))
